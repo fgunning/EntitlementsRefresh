@@ -6,10 +6,10 @@ from requests.packages.urllib3.filepost import encode_multipart_formdata
 
 # Open database connection and prepare a cursor.  This demo script is built for SQL Server, so modify as needed for your database of choice.
 cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'
-                      'SERVER=demodata.c5c9e2pjmpzh.us-west-2.rds.amazonaws.com;'
-                      'DATABASE=Superstore;'
-                      'UID=test;'
-                      'PWD=Data!Nfy23;'
+                      'SERVER=<database-url>;'
+                      'DATABASE=<database-name>;'
+                      'UID=<username>;'
+                      'PWD=<password>;'
                       'trust_server_certificate=yes;')
 cursor = cnxn.cursor()
 
